@@ -15,7 +15,7 @@ ps : $(ALL_PS)
 
 
 %.pdf: aux/% tmp/% %.tex
-	latexmk -xelatex $*.tex > tmp/$*/out || (less +G tmp/$*/out && exit 1)
+	latexmk -pdf $*.tex > tmp/$*/out || (less +G tmp/$*/out && exit 1)
 # compile using XeLaTex
 # redirects the shell output of latexmk to tmp
 # if latexmk were to fail, show the tail of said output for debugging purposes
