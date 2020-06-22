@@ -74,5 +74,7 @@ mrproper_% : clean_%
 help :
 	cat README.md
 
+test: mrproper all
+	open $(ALL_PDF)
 
 .PHONY: all clean mrproper help pdf dvi ps
