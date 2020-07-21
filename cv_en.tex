@@ -6,6 +6,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
+\usepackage{xcolor}
+\definecolor{quote}{HTML}{302159}
+\definecolor{author}{HTML}{482B50}
 
 \usepackage[scale=0.75]{geometry}
 \graphicspath{{figures/}}
@@ -17,7 +20,6 @@
 \phone[mobile]{+33 6 21 59 25 74}
 \phone[fixed]{+33 9 50 40 28 82}
 \email{vincentlafouasse@live.fr}
-\quote{There is excitment, adventure, and challenge, and there can be great art in organic synthesis. – Robert B. Woodward}
 
 %-------------------------------------------------------------------------------
 %            content
@@ -26,6 +28,22 @@
 
 \makecvtitle
 
+{
+    \vspace{-5mm}
+    \centering
+    \color{quote}
+    \rmfamily
+    ``There is excitment, adventure, and challenge,\\
+    and there can be great art in organic synthesis.''\\
+}
+
+\begin{flushright}
+    {\color{author}
+    {---}  \textsc{Robert B. Woodward}
+    \footnote{as reported by: Nicolaou, K. C.; Sorensen, E. J. Introduction: Constructing the Molecules of Nature. \\
+    In \textit{Classics in total synthesis: targets, strategies, methods}; Wiley-VCH ; \textbf{1996}; p 3.
+}}
+\end{flushright}
 %
 \section{Research Interest}
 \cvitem{\textsc{About me}}{%
@@ -51,7 +69,7 @@ supramolecular chemistry, chemical biology, and chemistry for optoelectronics.%
 {Organic Chemistry specialization}
 
 \cventry{2017--2018}{B.Sc. Chem. (Physics minor)}%
-{Sorbonne Université}{Paris (75)}{High Honours}%
+{Sorbonne Université (ex-UPMC)}{Paris (75)}{High Honours}%
 {Fundamentals of Chemistry and Physics}
 
 \cventry{2015--2017}{B.Sc. Sciences de la Matière}%

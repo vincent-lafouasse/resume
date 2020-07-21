@@ -3,6 +3,8 @@ ALL_PDF = $(patsubst %.tex,%.pdf,$(wildcard *.tex))
 ALL_DVI = $(patsubst %.tex,%.dvi,$(wildcard *.tex))
 ALL_PS = $(patsubst %.tex,%.ps,$(wildcard *.tex))
 
+cv: clean cv_en.pdf
+	cp cv_en.pdf cv_LAFOUASSE.pdf
 
 # makes everything that can be made
 # default is pdf
